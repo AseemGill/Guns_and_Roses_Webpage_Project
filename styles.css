@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo&display=swap"); /* Importing a font */
+
+* {
+    box-sizing: border-box; /* width attribute takes into account padding now 
+    
+    with this width = 200px including padding
+    without this width = 200px and padding will be around*/
+    font-family: Aleo; /* Select font for everything */
+    color: rgba(96, 96, 96, 0.414)
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+} /* Gets rid of margin near the edge of window  But we may notice that there is a margin at the top... this is because the ul element has a margin as well The fix is below*/
+
+.nav ul {
+    margin: 0;
+} /* all uls inside a nav class will have no margin */
+
+.nav li {
+    display: inline;
+} /* indicates that list elements should appear in the same line */
+
+.nav a {
+    display: inline-block; /* allows for padding above and below */
+    padding: .5em; /* Adds space */
+    color: white; /* Nav text is white */
+    text-decoration: none; /* Removes underlines */
+    /* you may notice no padding on the top or bottom of the elements, this is because inline elements can not having padding above or below */
+}
+
+.nav a:hover {
+    background-color: #FFFFFF77;
+    transform: scale(1.2);
+} /* Things that happen when we hover over a nav link */
+
+.main-nav {
+    text-align: center;
+    font-size: 2em
+}
+
+.main-header {
+    background-color: rgba(0,0,0,0.6); 
+    background-image: url("Images/Header-Background.jpg"); /* Specifies url of background image */
+    background-blend-mode: multiply; /* combines the two background elemnts image and color */
+    background-size: cover; /* Tells make image get as tall or wide as it can before it's border moves past window */
+    padding-bottom: 30px; 
+}
