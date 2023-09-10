@@ -1,12 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Aleo&display=swap"); /* Importing a font */
 
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=New+Rocker&display=swap");
+
+@font-face {
+    font-family: "Imbue";
+    src: url("Fonts/Imbue/Imbue-VariableFont_opsz,wght.ttf") format("ttf")
+}
+
 * {
     box-sizing: border-box; /* width attribute takes into account padding now 
     
     with this width = 200px including padding
     without this width = 200px and padding will be around*/
     font-family: Aleo; /* Select font for everything */
-    color: rgba(96, 96, 96, 0.414)
+    color: rgba(28, 28, 28, 0.751)
 }
 
 html, body {
@@ -33,11 +42,32 @@ html, body {
 .nav a:hover {
     background-color: #FFFFFF77;
     transform: scale(1.2);
+    font-weight: bolder;
 } /* Things that happen when we hover over a nav link */
 
 .main-nav {
     text-align: center;
-    font-size: 2em
+    font-size: 2em;
+    font-weight: lighter;
+    border-bottom: 2px solid rgba(255, 251, 0, 0.748);
+}
+
+
+
+.band-name {
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    font-family: Metal Mania;
+    font-weight: normal;
+}
+
+.band-name-large {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 6em;
+    font-family: Metal Mania;
+    font-weight: l;
 }
 
 .main-header {
@@ -46,4 +76,57 @@ html, body {
     background-blend-mode: multiply; /* combines the two background elemnts image and color */
     background-size: cover; /* Tells make image get as tall or wide as it can before it's border moves past window */
     padding-bottom: 30px; 
+}
+
+.content-section {
+    margin: 1em;
+} /* Gives spacing to para*/
+
+.container {
+    margin: 0 auto; /* Top/bottom margin=0 and left right will accomdate */
+    max-width: 900px; /* Section will not be larger than 900px */
+    padding: 0 1.5em /* Moves text so it's not beside wall*/
+} /* */
+
+.section-header {
+    font-family: "New Rocker";
+    font-weight: normal;
+    color: black;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.about-band-image {
+    height: 100px; 
+    width: 200px;
+    float: left; /* Image will move to left side and text will flow around it */
+    margin: 15px; /* margin between image and text */
+    border-radius: 50%; /* applies circular border 50% will result in a oval/circle */
+}
+
+.main-footer {
+    background-color: red;
+    padding: .25em;
+}
+
+.footer-nav {
+    float: right;
+}
+
+.main-footer-container {
+    display: flex;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 0.5em;
+}
+
+.footer-nav img {
+    width: 40px;
+    height: 40px
 }
