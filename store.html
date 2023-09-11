@@ -1,78 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title> Guns and Roses | STORE </title> <!-- Sets the name that appears in the tab-->
-    <meta name="description" content="This is the description">
-    <!-- This is extra information, the content will appear as the description when googling this page-->
-</head>
+    <head>
+        <title> Guns and Roses FanPage </title> <!-- Sets the name that appears in the tab-->
+        <meta name="description" content="This is the description">
+        <!-- This is extra information, the content will appear as the description when googling this page-->
+        <link rel="stylesheet" href="styles.css" />
+    </head>
 <body>
-    <header> <!-- Represents container for introductry content or set of navigational links. Defines header of page -->
+    <header class="main-header"> <!-- Represents container for introductry content or set of navigational links. Defines header of page -->
         <nav> <!-- Navigation Links -->
-            <ul> <!-- Unorder list -->
+            <ul class="nav main-nav"> <!-- Unorder list -->
                 <li><a href="index.html">HOME</a></li> <!-- List Items (only) can used in ul or ol-->
                 <li><a href="store.html">STORE</a></li> <!-- Headers become clickable-->
                 <li><a href="about.html">ABOUT</a></li>
             </ul>
         </nav>
-        <hr> <!-- Horizontal Line -->
-        <h1> Guns and Roses </h1> <!-- h1-h6 define heading sizes -->
+        <h1 class="band-name band-name-large"> Guns and Roses </h1> <!-- h1-h6 define heading sizes -->
     </header>
-    <section> <!-- Grouping of Stuff in a section (all content is related)-->
-        <h2> MUSIC </h2>
-        <div>
-            <div>
-                <strong> Appetite for Destruction </strong>
+    <section class="content-section container"> <!-- Grouping of Stuff in a section (all content is related)-->
+        <h2 class="section-header"> MUSIC </h2>
+        <div class = "shop-items">
+            <div class = "shop-item">
+                <span class = "shop-item-title"> Appetite for Destruction </span>
+                <img class = "shop-item-image" src="Images\Album_Cover_Appetite_for_Destruction.jpg">
+                <div class = "shop-item-details">
+                    <span class = "shop-item-price"> $12.99 </span>
+                    <button class = "btn primary-btn shop-item-button" type="button"> Add to Cart </button>
+                </div>
             </div>
-            <img src="Images\Album_Cover_Appetite_for_Destruction.jpg">
-            <div>
-                <span> $12.99 </span>
-                <button type="button"> Add to Cart </button>
+            
+            <div class = "shop-item">
+                <span class = "shop-item-title"> Use Your Illusion I </span>
+                <img class = "shop-item-image" src="Images\Album_Cover_Use_Your_Illusion_I.jpg">
+                <div class = "shop-item-details">
+                    <span class = "shop-item-price"> $11.99 </span>
+                    <button button class = "btn primary-btn shop-item-button" type="button"> Add to Cart </button>
+                </div>
             </div>
-            <div>
-                <strong> Use Your Illusion I </strong>
+
+            <div class = "shop-item">
+                <span class = "shop-item-title"> Use Your Illusion II </span>
+                <img class = "shop-item-image" src="Images\Album_Cover_Use_Your_Illusion_II.jpg">
+                <div class = "shop-item-details">
+                    <span class = "shop-item-price"> $11.99 </span>
+                    <button button class = "btn primary-btn shop-item-button" type="button"> Add to Cart </button>
+                </div>
             </div>
-            <img src="Images\Album_Cover_Use_Your_Illusion_I.jpg">
-            <div>
-                <span> $11.99 </span>
-                <button type="button"> Add to Cart </button>
-            </div>
-            <div>
-                <strong> Use Your Illusion II </strong>
-            </div>
-            <img src="Images\Album_Cover_Use_Your_Illusion_II.jpg">
-            <div>
-                <span> $11.99 </span>
-                <button type="button"> Add to Cart </button>
-            </div>
-            <div>
-                <strong> Chinese Democracy </strong>
-            </div>
-            <img src="Images\Album_Cover_Chinese_Democracy.jpg">
-            <div>
-                <span> $6.99 </span>
-                <button type="button"> Add to Cart </button>
+
+            <div class = "shop-item">
+                <span class = "shop-item-title"> Chinese Democracy </span>
+                <img class = "shop-item-image" src="Images\Album_Cover_Chinese_Democracy.jpg">
+                <div class = "shop-item-details">
+                    <span class = "shop-item-price"> $6.99 </span>
+                    <button button class = "btn primary-btn shop-item-button" type="button"> Add to Cart </button>
+                </div>
             </div>
         </div>
     </section>
-    <section>
-        <h2>MERCH</h2>
-        <div>
-            <div>
-                <strong> T-Shirt </strong>
+    <section class="content-section container"></sectionclass>
+        <h2 class="section-header">MERCH</h2>
+        <div class = "shop-items">
+            <div class = "shop-item">
+                <span class = "shop-item-title"> T-Shirt </span>
+                <img class = "shop-item-image" src="Images\Merch_tshirt.jpg">
+                <div class = "shop-item-details">
+                    <span class = "shop-item-price"> $19.99 </span>
+                    <button class = "btn primary-btn shop-item-button" type="button"> Add to Cart </button>
             </div>
-            <img src="Images\Merch_tshirt.jpg">
-            <div>
-                <span> $19.99 </span>
-                <button type="button"> Add to Cart </button>
+            <div class = "shop-item">
+                <span class = "shop-item-title"> Poster </span>
+                <img class = "shop-item-image" src="Images\Merch_poster.jpg">
+                <div class = "shop-item-details">
+                    <span class = "shop-item-price"> $24.99 </span>
+                    <button class = "btn primary-btn shop-item-button" type="button"> Add to Cart </button>
             </div>
-            <div>
-                <strong> Poster </strong>
             </div>
-            <img src="Images\Merch_poster.jpg">
-            <div>
-                <span> $24.99 </span>
-                <button type="button"> Add to Cart </button>
-            </div>
+
         </div>
     </section>
     <section>
@@ -108,25 +111,27 @@
         </div>
         
     </section>
-    <footer>
-        <h3> Guns and Roses </h3>
-        <ul>
-            <li>
-                <a href="https://www.instagram.com/gunsnroses/" target="_blank"> 
-                    <img src="Images\Instagram_icon.jpg" width="40" height = "40"> 
-                </a> 
-            </li>
-            <li> 
-                <a href="https://open.spotify.com/artist/3qm84nBOXUEQ2vnTfUTTFC" target="_blank"> 
-                    <img src="Images\Spotify_icon.png" width="40" height = "40"> 
-                </a> 
-            </li>
-            <li> 
-                <a href="https://www.youtube.com/@gunsnroses" target="_blank">
-                    <img src="Images\Youtube_icon.png" width="40" height = "40"> 
-                </a>
-            </li>
-        </ul>
-    </footer>    
+    <footer class="main-footer">
+        <div class = "main-footer-container">
+            <h3 class="band-name footer-band-name"> Guns and Roses </h3>
+            <ul class = "nav footer-nav">
+                <li>
+                    <a href="https://www.instagram.com/gunsnroses/" target="_blank"> 
+                        <img src="Images\Instagram_icon.jpg" width="40" height = "40"> 
+                    </a> 
+                </li>
+                <li> 
+                    <a href="https://open.spotify.com/artist/3qm84nBOXUEQ2vnTfUTTFC" target="_blank"> 
+                        <img src="Images\Spotify_icon.svg" width="60" height = "60"> 
+                    </a> 
+                </li>
+                <li> 
+                    <a href="https://www.youtube.com/@gunsnroses" target="_blank">
+                        <img src="Images\Youtube_icon.png" width="80" height = "40"> 
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>     
 </body>
 </html> 

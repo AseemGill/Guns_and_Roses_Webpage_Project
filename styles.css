@@ -209,7 +209,62 @@ html, body {
     border-radius: 10%;
 }
 
+.primary-btn {
+    background-color:rgb(255, 0, 0);
+    color: white;
+    border: 1px solid;
+    font-weight: bold;
+    border-radius: 10%;
+}
+
 .tour-btn:hover {
     font-weight: bolder;
     transform: scale(1.1);
+}
+
+.primary-btn:hover {
+    font-weight: bolder;
+    transform: scale(1.2);
+}
+
+.shop-item {
+    margin: 30px;   
+}
+
+.shop-item-title {
+    display: block; /* title will appear on it's own line */
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center; /* Aligns the text with the button */
+    padding-top: 15px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+}
+
+.shop-items {
+    display: flex; /* all one line */
+    flex-wrap: wrap; /* wraps around */
+    justify-content: space-around;
+}
+
+.shop-item-price {
+    font-weight: bold;
 }
