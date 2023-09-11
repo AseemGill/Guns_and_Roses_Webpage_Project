@@ -130,3 +130,86 @@ html, body {
     width: 40px;
     height: 40px
 }
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    background-color: transparent;
+    border: 2px solid;
+    font-size: 1.5em;
+    border-radius: 0;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    transform: scale(1.2);
+    background-color: #FFFFFF77;
+
+}
+
+
+.btn-play {
+    display: block;
+    border-radius: 50%;
+    font-weight: lighter;
+    margin: 0 auto;
+    font-size: 4em;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.tour-row {
+    border-bottom: 1px solid;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+
+.tour-row:last-child {
+    border-bottom: none;
+    margin-bottom: none;
+    padding-bottom: none;
+}
+
+.tour-item {
+    display: inline-block;
+    padding-right: 0.5em;
+}
+
+.tour-date {
+    color: #555;
+    font-weight: bold;
+    width: 20%;
+}
+
+.tour-city {
+    width: 24%;
+}
+
+.tour-arena {
+    width: 42%;
+}
+
+.tour-btn {
+    background-color:rgb(255, 0, 0);
+    color: white;
+    border: 1px solid;
+    font-weight: bold;
+    max-width: 16%;
+    border-radius: 10%;
+}
+
+.tour-btn:hover {
+    font-weight: bolder;
+    transform: scale(1.1);
+}

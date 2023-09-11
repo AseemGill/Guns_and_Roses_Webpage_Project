@@ -4,94 +4,80 @@
     <title> Guns and Roses FanPage </title> <!-- Sets the name that appears in the tab-->
     <meta name="description" content="This is the description">
     <!-- This is extra information, the content will appear as the description when googling this page-->
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header> <!-- Represents container for introductry content or set of navigational links. Defines header of page -->
+    <header class="main-header"> <!-- Represents container for introductry content or set of navigational links. Defines header of page -->
         <nav> <!-- Navigation Links -->
-            <ul> <!-- Unorder list -->
+            <ul class = "nav main-nav"> <!-- Unorder list -->
                 <li><a href="index.html">HOME</a></li> <!-- List Items (only) can used in ul or ol-->
                 <li><a href="store.html">STORE</a></li> <!-- Headers become clickable-->
                 <li><a href="about.html">ABOUT</a></li>
             </ul>
         </nav>
-        <hr> <!-- Horizontal Line -->
-        <h1> Guns and Roses </h1> <!-- h1-h6 define heading sizes -->
-        <button> Get our Latest Album</button> <!-- Renders a clickable button with specific text-->
-        <br> <!-- Creates a line break-->
-        <br> <!-- Creates a line break-->
-        <!-- TODO: Find a suitable Background Image -->
-        <button> &#9658; </button> <!-- HTML Entity for Play Button-->
+        <h1 class="band-name band-name-large"> Guns and Roses </h1> <!-- h1-h6 define heading sizes -->
+        <div class = "container">
+            <button class="btn btn-header"> Get our Latest Album</button> <!-- Renders a clickable button with specific text-->
+            <!-- TODO: Find a suitable Background Image -->
+        </div>
+            <button class="btn btn-header btn-play"> &#9658; </button> <!-- HTML Entity for Play Button-->
     </header>
-    <section>
-        <h2>Tours</h2>
-            <div>
-                <div>
-                    <strong>Sep 9, 2023   </strong> <!-- HTML autoremoves extra space--> 
-                    &lt;&gt;
-                    <span>St. Louis, MO</span>
-                    &lt;&gt;
-                    <span>Busch Stadium</span>
-                    &lt;&gt;
-                    <button type ="button">Buy Tickets</button> <!-- Four Button types exit button, menu, reset, submit -->
-                    <hr>
+    <section class="content-section container">
+        <h2 class="section-header">Tours</h2>
+            <div class = "tour">
+                <div class = "tour-row">
+                    <span class = "tour-item tour-date">Sep 9, 2023   </span> <!-- HTML autoremoves extra space--> 
+                    <span class = "tour-item tour-city">St. Louis, MO</span>
+                    <span class = "tour-item tour-arena">Busch Stadium</span>
+                    <button class="btn tour-btn" type ="button">Buy Tickets</button> <!-- Four Button types exit button, menu, reset, submit -->
                 </div>
-                <div>
-                    <strong>Sep 12, 2023</strong> 
-                    &lt;&gt;
-                    <span>Knoxville, TN</span>
-                    &lt;&gt;
-                    <span>Thompson-Boling Arena</span>
-                    &lt;&gt;
-                    <button type ="button">Buy Tickets</button>
-                    <hr>
+                <div class = "tour-row"> 
+                    <span class = "tour-item tour-date">Sep 12, 2023</span> 
+                    <span class = "tour-item tour-city">Knoxville, TN</span>
+                    <span class = "tour-item tour-arena">Thompson-Boling Arena</span>
+                    <button class="btn tour-btn" type ="button">Buy Tickets</button>
                 </div>
-                <div>
-                    <strong>Sep 15, 2023</strong>
-                    &lt;&gt; 
-                    <span>Hollywood, FL</span>
-                    &lt;&gt;
-                    <span>Hard Rock Live</span>
-                    &lt;&gt;
-                    <button type ="button">Buy Tickets</button>
-                    <hr>
+                <div class = "tour-row">
+                    <span class = "tour-item tour-date">Sep 15, 2023</span>
+                    <span class = "tour-item tour-city">Hollywood, FL</span>
+                    <span class = "tour-item tour-arena">Hard Rock Live</span>
+                    <button class="btn tour-btn" type ="button">Buy Tickets</button>
                 </div>
-                <div>
-                    <strong>Sep 17, 2023</strong> 
-                    <span>Atlanta, GA</span>
-                    <span>Music Midtown - Piedmont Park</span>
-                    <button type ="button">Buy Tickets</button>
-                    <hr>
+                <div class = "tour-row">
+                    <span class = "tour-item tour-date">Sep 17, 2023</span> 
+                    <span class = "tour-item tour-city">Atlanta, GA</span>
+                    <span class = "tour-item tour-arena">Music Midtown - Piedmont Park</span>
+                    <button class="btn tour-btn" type ="button">Buy Tickets</button>
                 </div>
-                <div>
-                    <strong> Sep 20, 2023 </strong> <!-- Highlights somthing important (usually bolded)--> 
-                    &lt;&gt;
-                    <span> Biloxi, MS </span>
-                    &lt;&gt;
-                    <span> Mississippi Coast Coliseum </span>
-                    &lt;&gt;
-                    <button type ="button"> Buy Tickets </button>
+                <div class = "tour-row">
+                    <span class = "tour-item tour-date"> Sep 20, 2023 </span> <!-- Highlights somthing important (usually bolded)--> 
+                    <span class = "tour-item tour-city"> Biloxi, MS </span>
+                    <span class = "tour-item tour-arena"> Mississippi Coast Coliseum </span>
+                    <button class="btn tour-btn" type ="button"> Buy Tickets </button>
                 </div>
             </div>
     </section>
-    <footer>
-        <h3> Guns and Roses </h3>
-        <ul>
-            <li>
-                <a href="https://www.instagram.com/gunsnroses/" target="_blank"> 
-                    <img src="Images\Instagram_icon.jpg" width="40" height = "40"> 
-                </a> 
-            </li>
-            <li> 
-                <a href="https://open.spotify.com/artist/3qm84nBOXUEQ2vnTfUTTFC" target="_blank"> 
-                    <img src="Images\Spotify_icon.png" width="40" height = "40"> 
-                </a> 
-            </li>
-            <li> 
-                <a href="https://www.youtube.com/@gunsnroses" target="_blank">
-                    <img src="Images\Youtube_icon.png" width="40" height = "40"> 
-                </a>
-            </li>
-        </ul>
+    <footer class="main-footer">
+        <div class = "main-footer-container">
+            <h3 class="band-name footer-band-name"> Guns and Roses </h3>
+            <ul class = "nav footer-nav">
+                <li>
+                    <a href="https://www.instagram.com/gunsnroses/" target="_blank"> 
+                        <img src="Images\Instagram_icon.jpg" width="40" height = "40"> 
+                    </a> 
+                </li>
+                <li> 
+                    <a href="https://open.spotify.com/artist/3qm84nBOXUEQ2vnTfUTTFC" target="_blank"> 
+                        <img src="Images\Spotify_icon.svg" width="60" height = "60"> 
+                    </a> 
+                </li>
+                <li> 
+                    <a href="https://www.youtube.com/@gunsnroses" target="_blank">
+                        <img src="Images\Youtube_icon.png" width="80" height = "40"> 
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>    
 </body>
 </html> 
