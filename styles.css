@@ -268,3 +268,73 @@ html, body {
 .shop-item-price {
     font-weight: bold;
 }
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: black
+}
+
+.cart-column {
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding-bottom: 1em;
+    margin-right: 1.5em;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color:#333
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: 0.5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: orange;
+    border: none;
+    font-weight: bold;
+    border-radius: 10%;
+}
+
+.btn-danger:hover {
+    transform: scale(1.2);
+    font-weight: bolder;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: black solid;
+    color: black;
+    background-color: rgba(189, 183, 107, 0.249);
+    text-align: center;
+    font-size: 1.2em;
+    vertical-align: baseline;
+}

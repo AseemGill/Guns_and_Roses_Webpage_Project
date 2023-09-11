@@ -78,30 +78,30 @@
 
         </div>
     </section>
-    <section>
-        <h2>CART</h2>
-        <div>
-            <strong> Item </strong>
-            &lt;&gt;
-            <strong> Price </strong>
-            &lt;&gt;
-            <strong> Quantity </strong>
+    <section class = "container content-section">
+        <h2 class = "section-header">CART</h2>
+        <div class = "cart-row">
+            <span class = "cart-item cart-header cart-column"> Item </span>
+            <span class = "cart-price cart-header cart-column"> Price </span>
+            <span class = "cart-quantity cart-header cart-column"> Quantity </span>
+        </div>
+        <div class="cart-row">
+            <div class="cart-column cart-item">
+                <img class = "cart-item-image" src="Images\Album_Cover_Appetite_for_Destruction.jpg" width="100" height="100"> <!-- We can specific height and width here, however if we only specify one it will maintain the aspect ratio-->
+                <span class = "cart-item-title"> T-Shirt</span>
+            </div>
+            <span class="cart-column cart-price"> $19.99</span>
+            <div class="cart-column cart-quantity">
+                <input class="cart-column cart-quantity-input" type="number" value="1"> <!-- Creates a box for entering inputs, you can restrict the type value is default value-->
+                <button class = "btn btn-danger cart-quantity-button" type="button"> Remove </button>
+            </div>
         </div>
         <div>
-            <img src="Images\Album_Cover_Appetite_for_Destruction.jpg" width="100" height="100"> <!-- We can specific height and width here, however if we only specify one it will maintain the aspect ratio-->
-            <span> T-Shirt</span>
-            &lt;&gt;
-            <span> $19.99</span>
-            <input type="number" value="1"> <!-- Creates a box for entering inputs, you can restrict the type value is default value-->
-            <button type="button"> Remove </button>
-        </div>
-        <div>
-            <img src="Images\Merch_poster.jpg" width="100" height="100"> 
-            <span> T-Shirt</span>
-            &lt;&gt;
+            <img class = "cart-item-image" src="Images\Merch_poster.jpg" width="100" height="100"> 
+            <span class = "cart-item-title"> Poster</span>
             <span> $24.99</span>
-            <input type="number" value="2"> 
-            <button type="button"> Remove </button>
+            <input class="cart-column cart-quantity-input" type="number" value="2"> 
+            <button class = "btn btn-danger cart-quantity-button" type="button"> Remove </button>
         </div>
         <hr>
         <div>
