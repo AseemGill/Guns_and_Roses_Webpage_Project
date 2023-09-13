@@ -76,6 +76,7 @@ html, body {
     background-blend-mode: multiply; /* combines the two background elemnts image and color */
     background-size: cover; /* Tells make image get as tall or wide as it can before it's border moves past window */
     padding-bottom: 30px; 
+    background-position: center;
 }
 
 .content-section {
@@ -279,7 +280,6 @@ html, body {
     border-bottom: 1px solid black;
     display: flex;
     align-items: center;
-    padding-bottom: 1em;
     margin-right: 1.5em;
     margin-top: 10px;
 }
@@ -337,4 +337,38 @@ html, body {
     text-align: center;
     font-size: 1.2em;
     vertical-align: baseline;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border-bottom: none;
+}
+
+.cart-total {
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+    margin-right: 20px;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
 }
